@@ -1,0 +1,275 @@
+.navbar-mobile {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/*@media only screen and (max-width: 500px) {
+  .featured-box,
+  .featured-text {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    margin-inline: auto;
+  }
+
+  .featured-image {
+    display: block;
+    display: none;
+    position: relative;
+    align-items: center;
+  }
+
+  .featured-name h4 {
+    font-size: 2rem;
+  }
+
+  .featured-text {
+    width: 280px;
+    background-color: aquamarine;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+} */
+
+/* For screens smaller than 768px (tablets and mobile phones) */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    justify-content: space-between;
+  }
+
+  .hero-h1 {
+    color: var(--text-color);
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+  }
+  nav {
+    display: none; /* Hide the desktop navbar */
+  }
+
+  .navbar-mobile {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar-mobile li {
+    margin-bottom: 15px;
+  }
+
+  .navbar-mobile li:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-mobile a {
+    font-size: 1.05rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 600;
+    border: 1px solid #ffff;
+    border-radius: 3px;
+  }
+
+  .bx-menu {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  /* Home */
+
+  .featured-image {
+    position: relative;
+    display: block;
+    height: 200px;
+  }
+
+  .featured-text {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .featured-name {
+    text-align: center;
+  }
+
+  .social_icons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* About */
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about h1::after {
+    position: relative;
+    display: block;
+    content: "";
+    top: 50%;
+    right: -25%;
+    width: 123px;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+  }
+
+  .about-container {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-container p {
+    text-align: justify;
+  }
+
+  .about img {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  /* Skill */
+
+  .skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills h1::after {
+    position: relative;
+    display: block;
+    content: "";
+    top: 50%;
+    right: -25%;
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+  }
+
+  .skill-set {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .container-space {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Projects */
+
+  .projects {
+    flex-direction: column;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-container h1 {
+    margin: 0;
+  }
+
+  .projects h1::after {
+    position: relative;
+    display: block;
+    content: "";
+    top: 50%;
+    right: -58%;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  /* Contact */
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact h1::after {
+    position: relative;
+    display: block;
+    content: "";
+    top: 50%;
+    right: -25%;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  .contact-img {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-img {
+    width: 70%;
+  }
+}
+
+/* For screens larger than 768px (desktops) */
+@media only screen and (min-width: 768px) {
+  .navbar-mobile {
+    display: none; /* Hide the mobile navbar */
+  }
+}
+
+/* For screens between 768px and 1024px (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Add your specific styles for tablets here */
+}
+
+/* For screens larger than 1024px (desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Add your specific styles for desktops here */
+}
